@@ -1,0 +1,6 @@
+npm init
+npm init --y
+
+https://www.npmjs.com/
+
+npm i underscore

@@ -6,3 +6,13 @@ https://www.npmjs.com/
 npm i underscore
 
 npm i mongoose
+
+//restore dependencies
+delete node_modules folder
+then run
+npm i
+
+//if you want excludes node packages from git
+create a file with extension .gitignore
+within it register files that you want ignore
+node_modules/

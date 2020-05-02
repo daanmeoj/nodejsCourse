@@ -4,3 +4,5 @@ npm init --y
 https://www.npmjs.com/
 
 npm i underscore
+
+npm i mongoose

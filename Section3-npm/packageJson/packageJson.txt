@@ -16,3 +16,67 @@ npm i
 create a file with extension .gitignore
 within it register files that you want ignore
 node_modules/
+
+the versions of a node package have three components
+^4.13.6
+major version(new feature that could potentially break the existing application).minor version
+(adding minor features that dont break exisisting api).patch for bug fixes
+the carrot character indicates we are interested in any version as long as the major version is 4
+~1.8.3 you are interested in any version as long as major version is 1 and minor version is 8
+1.8.3 you are interested in exact same version
+
+
+//check package version
+npm list
+//if you only want to see dependencies of your application
+npm list --depth=0
+
+//Find metadata of a package
+npm view mongoose
+
+//for seeing only dependencies
+npm view mongoose dependencies
+
+//for seeing existing package versions
+npm view mongoose versions
+
+//installing an specific version
+npm i mongoose@2.4.2
+
+/updating local packages
+//to see outdated packages
+npm outdated
+//if you want update it
+npm update
+
+///install that
+npm i -g npm-check-updates
+//then we have a new command tool name
+npm-check-updates
+npm-check-updates or ncu -u
+npm i
+//if you run npm outdated you wont get anything
+
+///install js hint as a development dependency
+npm i jshint --save--dev
+
+//uninstall a package
+npm un jshint
+
+//npm is a global command line tool also ng(angular cli)
+npm i -g <name of the package>
+npm i -g npm@5.5.1
+sudo npm i -g npm 
+npm -g outdated
+npm un -g
+
+///publish
+sudo npm login
+sudo npm publish
+you need to change name of the package
+
+//update publish package
+npm version major
+minor o patch
+let use npm version minor
+then npm publish

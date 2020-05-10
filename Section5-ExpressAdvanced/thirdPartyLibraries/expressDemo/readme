@@ -1,0 +1,28 @@
+npm init -y
+npm i express
+
+//here you could find all methods related with res and req
+http://expressjs.com/en/4x/api.html#res
+
+//nodemon(node monitor)
+npm i -g nodemon
+
+//to set the port
+export PORT=5000
+
+//queryString parameters
+http://localhost:3000/api/courses/2020/4?sortBy=name
+
+
+//doing post request
+type 127.0.0.1:3000/api/courses in postman
+choose post request
+body->raw
+text->json
+{
+   "name":"new course"
+}
+
+/for validation
+search npm joi  
+npm i joi
